@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quize</title>
+<meta charset="utf-8">
+<meat name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="demo.css" media="all" />
+</head>
+<body>
+<div class="container">
+		
+          			<header>
+				<h1><span>Quiz</span> Register To Play</h1>
+            </header>       
+      <div  class="form">
+    		<form id="contactform" action="quize_select.html" method="post"> 
+    			<p class="contact"><label for="name">Name</label></p> 
+    			<input id="name" name="name" placeholder="First and last name" required=""  type="text"> 
+    			 
+    			<p class="contact"><label for="email">Email</label></p> 
+    			<input id="email" name="email" placeholder="example@domain.com" required="" type="email"> 
+                
+                 <fieldset>
+                 <label>Birthday</label>
+                  <label class="month"> 
+                  <select class="select-style" name="BirthMonth">
+                  <option value="">Month</option>
+                  <option  value="01">January</option>
+                  <option value="02">February</option>
+                  <option value="03" >March</option>
+                  <option value="04">April</option>
+                  <option value="05">May</option>
+                  <option value="06">June</option>
+                  <option value="07">July</option>
+                  <option value="08">August</option>
+                  <option value="09">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12" >December</option>
+                  </label>
+                 </select>    
+                <label>Day<input class="birthday" maxlength="2" name="BirthDay"  placeholder="Day" required=""></label>
+                <label>Year <input class="birthyear" maxlength="4" name="BirthYear" placeholder="Year" required=""></label>
+              </fieldset>
+              <label>Gender &nbsp &nbsp</label>
+            <select class="select-style gender" name="gender">
+            <option value="select">i am..</option>
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+            <option value="others">Other</option>
+            </select><br><br>
+            
+            <p class="contact"><label for="phone">Mobile phone</label></p> 
+            <input id="phone" name="phone" placeholder="phone number" required="" type="text"> <br>
+            <input class="buttom" name="submit" id="submit" onClick="quize_select.html" value="Sign me up!" type="submit"> 	 
+   </form> 
+</div>      
+</div>
+
+</body>
+</html>
